@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0e604689268ba2c817db109f23bd1b55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0e604689268ba2c817db109f23bd1b55" ></div>
+        
+</body>
+<script>    
+    
+            var map_0e604689268ba2c817db109f23bd1b55 = L.map(
+                "map_0e604689268ba2c817db109f23bd1b55",
+                {
+                    center: [19.7515, 75.7139],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_923cffeeaa59e7d17dad66afbe9ed418 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0e604689268ba2c817db109f23bd1b55);
+        
+    
+            var marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2 = L.markerClusterGroup(
+                {}
+            );
+            map_0e604689268ba2c817db109f23bd1b55.addLayer(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var marker_70796c758b8070c8297151547ba695e1 = L.marker(
+                [46.86244000000005, 16.077090000000055],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_b96a75bff911f2792e1947d0d5910b65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_70796c758b8070c8297151547ba695e1.setIcon(icon_b96a75bff911f2792e1947d0d5910b65);
+        
+    
+        var popup_3e5971c1cb582557fd05fa2f72e55fd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_108185969497a0c0b540bfe550c65842 = $(`<div id="html_108185969497a0c0b540bfe550c65842" style="width: 100.0%; height: 100.0%;">Name</div>`)[0];
+            popup_3e5971c1cb582557fd05fa2f72e55fd3.setContent(html_108185969497a0c0b540bfe550c65842);
+        
+
+        marker_70796c758b8070c8297151547ba695e1.bindPopup(popup_3e5971c1cb582557fd05fa2f72e55fd3)
+        ;
+
+        
+    
+    
+            var marker_d88e92988d2cc05de38ebe826502ef30 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_a9074a800ae1f742a3d95905cd13ff6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d88e92988d2cc05de38ebe826502ef30.setIcon(icon_a9074a800ae1f742a3d95905cd13ff6d);
+        
+    
+        var popup_6bcc2aefeaba5c4b28330d02cf986bca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cfdbfd6138c5d889c703d82008b5e48 = $(`<div id="html_0cfdbfd6138c5d889c703d82008b5e48" style="width: 100.0%; height: 100.0%;">Urusa Dalvi</div>`)[0];
+            popup_6bcc2aefeaba5c4b28330d02cf986bca.setContent(html_0cfdbfd6138c5d889c703d82008b5e48);
+        
+
+        marker_d88e92988d2cc05de38ebe826502ef30.bindPopup(popup_6bcc2aefeaba5c4b28330d02cf986bca)
+        ;
+
+        
+    
+    
+            var marker_cd98007f4b2ba78b833ba114d8c0cec3 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_90993d4536777ff59f9f739c4158534a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cd98007f4b2ba78b833ba114d8c0cec3.setIcon(icon_90993d4536777ff59f9f739c4158534a);
+        
+    
+        var popup_f2e7f09fe11568bec2ef8a753f8b88fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fcd365fe739f076d05648b123c308c2 = $(`<div id="html_1fcd365fe739f076d05648b123c308c2" style="width: 100.0%; height: 100.0%;">Alia Bandarkar, </div>`)[0];
+            popup_f2e7f09fe11568bec2ef8a753f8b88fc.setContent(html_1fcd365fe739f076d05648b123c308c2);
+        
+
+        marker_cd98007f4b2ba78b833ba114d8c0cec3.bindPopup(popup_f2e7f09fe11568bec2ef8a753f8b88fc)
+        ;
+
+        
+    
+    
+            var marker_7be0d7acfab4b94fbbbd7038adeed4dc = L.marker(
+                [18.134250000000065, 73.11130000000003],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_49b3565b760b04b041c04e2380f8e488 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7be0d7acfab4b94fbbbd7038adeed4dc.setIcon(icon_49b3565b760b04b041c04e2380f8e488);
+        
+    
+        var popup_06db80e7079da6ac9abca72e4a76630f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8041cbb2e497f2decec89a06c002b9be = $(`<div id="html_8041cbb2e497f2decec89a06c002b9be" style="width: 100.0%; height: 100.0%;">Jay Patil</div>`)[0];
+            popup_06db80e7079da6ac9abca72e4a76630f.setContent(html_8041cbb2e497f2decec89a06c002b9be);
+        
+
+        marker_7be0d7acfab4b94fbbbd7038adeed4dc.bindPopup(popup_06db80e7079da6ac9abca72e4a76630f)
+        ;
+
+        
+    
+    
+            var marker_933434f46778daf831a1e94c1433fcfd = L.marker(
+                [17.75765000000007, 73.18781000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_c18e44a820823634c591625fc3b951e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_933434f46778daf831a1e94c1433fcfd.setIcon(icon_c18e44a820823634c591625fc3b951e4);
+        
+    
+        var popup_d6ae8d244b5618f50da1339a97dcfb73 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d3211589765b34fcfcb2bf7cdb13967 = $(`<div id="html_0d3211589765b34fcfcb2bf7cdb13967" style="width: 100.0%; height: 100.0%;">Musad Sarguru</div>`)[0];
+            popup_d6ae8d244b5618f50da1339a97dcfb73.setContent(html_0d3211589765b34fcfcb2bf7cdb13967);
+        
+
+        marker_933434f46778daf831a1e94c1433fcfd.bindPopup(popup_d6ae8d244b5618f50da1339a97dcfb73)
+        ;
+
+        
+    
+    
+            var marker_a6e90fd1f7e456ac86f9967742c4c9e2 = L.marker(
+                [17.822190000000035, 73.80508000000003],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_3085dada1e3ce09e8bfe56c42485724c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a6e90fd1f7e456ac86f9967742c4c9e2.setIcon(icon_3085dada1e3ce09e8bfe56c42485724c);
+        
+    
+        var popup_2ba47b7af83162475ba4ea7c3d5f1cb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3051e9862f2fbd31b8f695f311222f15 = $(`<div id="html_3051e9862f2fbd31b8f695f311222f15" style="width: 100.0%; height: 100.0%;">Shraddha Shinde</div>`)[0];
+            popup_2ba47b7af83162475ba4ea7c3d5f1cb4.setContent(html_3051e9862f2fbd31b8f695f311222f15);
+        
+
+        marker_a6e90fd1f7e456ac86f9967742c4c9e2.bindPopup(popup_2ba47b7af83162475ba4ea7c3d5f1cb4)
+        ;
+
+        
+    
+    
+            var marker_611fdbc98d76960d7ef3a2180f27c7c2 = L.marker(
+                [21.171190000000024, 79.65631000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_6dc44695586ec58f8aa9bd06b7c2c9a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_611fdbc98d76960d7ef3a2180f27c7c2.setIcon(icon_6dc44695586ec58f8aa9bd06b7c2c9a1);
+        
+    
+        var popup_e154a1c310bf165a79c821337c3ee224 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_557a40cfd3915fd8aeecc41970b5f9a8 = $(`<div id="html_557a40cfd3915fd8aeecc41970b5f9a8" style="width: 100.0%; height: 100.0%;">Ram Agrawal</div>`)[0];
+            popup_e154a1c310bf165a79c821337c3ee224.setContent(html_557a40cfd3915fd8aeecc41970b5f9a8);
+        
+
+        marker_611fdbc98d76960d7ef3a2180f27c7c2.bindPopup(popup_e154a1c310bf165a79c821337c3ee224)
+        ;
+
+        
+    
+    
+            var marker_e3e71d0169caf4cac8a241c11e554248 = L.marker(
+                [18.400000000000034, 76.58333000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_c060b985b77129b909371b5b93a88903 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3e71d0169caf4cac8a241c11e554248.setIcon(icon_c060b985b77129b909371b5b93a88903);
+        
+    
+        var popup_007a1926a0e48ef99704e856b46206a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5678936364551ba15143d46d28833b3 = $(`<div id="html_a5678936364551ba15143d46d28833b3" style="width: 100.0%; height: 100.0%;">Nilprasad Birajdar </div>`)[0];
+            popup_007a1926a0e48ef99704e856b46206a8.setContent(html_a5678936364551ba15143d46d28833b3);
+        
+
+        marker_e3e71d0169caf4cac8a241c11e554248.bindPopup(popup_007a1926a0e48ef99704e856b46206a8)
+        ;
+
+        
+    
+    
+            var marker_5dcb1f5708720ddcc637631eb6727e88 = L.marker(
+                [19.160380000000032, 76.20772000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_e0da317afde335ae2b18690befebf94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5dcb1f5708720ddcc637631eb6727e88.setIcon(icon_e0da317afde335ae2b18690befebf94d);
+        
+    
+        var popup_79c4723cd4ddf03a6332db836570c1cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16e5365717019e7a93783dd1ee348d9b = $(`<div id="html_16e5365717019e7a93783dd1ee348d9b" style="width: 100.0%; height: 100.0%;">Rajshri Abuj</div>`)[0];
+            popup_79c4723cd4ddf03a6332db836570c1cf.setContent(html_16e5365717019e7a93783dd1ee348d9b);
+        
+
+        marker_5dcb1f5708720ddcc637631eb6727e88.bindPopup(popup_79c4723cd4ddf03a6332db836570c1cf)
+        ;
+
+        
+    
+    
+            var marker_6092809282a45786befcec8e0a5baf41 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_6838a75e9719dc21e295013d113437cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6092809282a45786befcec8e0a5baf41.setIcon(icon_6838a75e9719dc21e295013d113437cd);
+        
+    
+        var popup_fbcfd5ea5ab42e075d4241efac6fb09b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c83580de4354ed3ae47fbbbb579eaa7 = $(`<div id="html_0c83580de4354ed3ae47fbbbb579eaa7" style="width: 100.0%; height: 100.0%;">Adesh Lad</div>`)[0];
+            popup_fbcfd5ea5ab42e075d4241efac6fb09b.setContent(html_0c83580de4354ed3ae47fbbbb579eaa7);
+        
+
+        marker_6092809282a45786befcec8e0a5baf41.bindPopup(popup_fbcfd5ea5ab42e075d4241efac6fb09b)
+        ;
+
+        
+    
+    
+            var marker_223d7d5b0c2b405d5c6b0e795ed07ab6 = L.marker(
+                [18.873320000000035, 77.18649000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_06b12e9f8e544a807362ac7935cf374e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_223d7d5b0c2b405d5c6b0e795ed07ab6.setIcon(icon_06b12e9f8e544a807362ac7935cf374e);
+        
+    
+        var popup_530dc74f1fe14f7c81fb0ddb4e4488a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28431e51eb0679b62011660e356a8f7a = $(`<div id="html_28431e51eb0679b62011660e356a8f7a" style="width: 100.0%; height: 100.0%;">Baliram Kendre </div>`)[0];
+            popup_530dc74f1fe14f7c81fb0ddb4e4488a8.setContent(html_28431e51eb0679b62011660e356a8f7a);
+        
+
+        marker_223d7d5b0c2b405d5c6b0e795ed07ab6.bindPopup(popup_530dc74f1fe14f7c81fb0ddb4e4488a8)
+        ;
+
+        
+    
+    
+            var marker_ae3be0fd30b445e1c746db0a4d470a0e = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_c530083113b5acc794e87b3da4c7270c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ae3be0fd30b445e1c746db0a4d470a0e.setIcon(icon_c530083113b5acc794e87b3da4c7270c);
+        
+    
+        var popup_4000b6349b413f211116e84310cafe96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_457f8d0a1a08660284f31ab3ab2d1620 = $(`<div id="html_457f8d0a1a08660284f31ab3ab2d1620" style="width: 100.0%; height: 100.0%;">Shruti Dinesh Palkar</div>`)[0];
+            popup_4000b6349b413f211116e84310cafe96.setContent(html_457f8d0a1a08660284f31ab3ab2d1620);
+        
+
+        marker_ae3be0fd30b445e1c746db0a4d470a0e.bindPopup(popup_4000b6349b413f211116e84310cafe96)
+        ;
+
+        
+    
+    
+            var marker_6d916f292f40a19d0f495244d82fc235 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_864183f204e70e9ce16cb953f67b6437 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d916f292f40a19d0f495244d82fc235.setIcon(icon_864183f204e70e9ce16cb953f67b6437);
+        
+    
+        var popup_72f6ed605f6b488a87a5b258888d3e2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c493520295abba01574820e018d7c77 = $(`<div id="html_8c493520295abba01574820e018d7c77" style="width: 100.0%; height: 100.0%;">Shruti Haresh Palkar</div>`)[0];
+            popup_72f6ed605f6b488a87a5b258888d3e2f.setContent(html_8c493520295abba01574820e018d7c77);
+        
+
+        marker_6d916f292f40a19d0f495244d82fc235.bindPopup(popup_72f6ed605f6b488a87a5b258888d3e2f)
+        ;
+
+        
+    
+    
+            var marker_f3a7f7fe4bba81b994533d9359d92855 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_d01320ca99bcf274b4984f0599884483 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f3a7f7fe4bba81b994533d9359d92855.setIcon(icon_d01320ca99bcf274b4984f0599884483);
+        
+    
+        var popup_44cbbdfab9f12654948b09ddddb5470f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b57ee224f545e84199346959fbbb5d49 = $(`<div id="html_b57ee224f545e84199346959fbbb5d49" style="width: 100.0%; height: 100.0%;">Pranali Dhepe</div>`)[0];
+            popup_44cbbdfab9f12654948b09ddddb5470f.setContent(html_b57ee224f545e84199346959fbbb5d49);
+        
+
+        marker_f3a7f7fe4bba81b994533d9359d92855.bindPopup(popup_44cbbdfab9f12654948b09ddddb5470f)
+        ;
+
+        
+    
+    
+            var marker_b8d8072207e139f9b32aba4172937d34 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_9232bb8f304def586a03984a59234e5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8d8072207e139f9b32aba4172937d34.setIcon(icon_9232bb8f304def586a03984a59234e5d);
+        
+    
+        var popup_44a504f595c22a658d78d71bbdbd6398 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b40cfc27c33f1bc55cc362566316a7ac = $(`<div id="html_b40cfc27c33f1bc55cc362566316a7ac" style="width: 100.0%; height: 100.0%;">Ravina Jadhav</div>`)[0];
+            popup_44a504f595c22a658d78d71bbdbd6398.setContent(html_b40cfc27c33f1bc55cc362566316a7ac);
+        
+
+        marker_b8d8072207e139f9b32aba4172937d34.bindPopup(popup_44a504f595c22a658d78d71bbdbd6398)
+        ;
+
+        
+    
+    
+            var marker_fca3efdcc96e6f86d33d7e90cd6d5146 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_5eab10902fe7e4fd982cd4c8c15d51e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fca3efdcc96e6f86d33d7e90cd6d5146.setIcon(icon_5eab10902fe7e4fd982cd4c8c15d51e4);
+        
+    
+        var popup_70cc31811eae79f8147d90993e7a016e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6102b88e1cf3d50658b81aa03d3c2e5 = $(`<div id="html_c6102b88e1cf3d50658b81aa03d3c2e5" style="width: 100.0%; height: 100.0%;">Srushti Bhonkar</div>`)[0];
+            popup_70cc31811eae79f8147d90993e7a016e.setContent(html_c6102b88e1cf3d50658b81aa03d3c2e5);
+        
+
+        marker_fca3efdcc96e6f86d33d7e90cd6d5146.bindPopup(popup_70cc31811eae79f8147d90993e7a016e)
+        ;
+
+        
+    
+    
+            var marker_8021388953e4234bd150782e2b33c507 = L.marker(
+                [19.239680000000078, 73.12948000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_56e02e04094ff97e4b57d4359a359b69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8021388953e4234bd150782e2b33c507.setIcon(icon_56e02e04094ff97e4b57d4359a359b69);
+        
+    
+        var popup_930dea22e437be8aa66a386557e0cf90 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f26ce8a424152e32f145fe218a61db7 = $(`<div id="html_2f26ce8a424152e32f145fe218a61db7" style="width: 100.0%; height: 100.0%;">Dhiraj Garse </div>`)[0];
+            popup_930dea22e437be8aa66a386557e0cf90.setContent(html_2f26ce8a424152e32f145fe218a61db7);
+        
+
+        marker_8021388953e4234bd150782e2b33c507.bindPopup(popup_930dea22e437be8aa66a386557e0cf90)
+        ;
+
+        
+    
+    
+            var marker_3f6f609921876cfd18f31e8b9d3b3681 = L.marker(
+                [20.993520000000046, 74.31818000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_6cc2627a3192942640f77ad1282cff5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f6f609921876cfd18f31e8b9d3b3681.setIcon(icon_6cc2627a3192942640f77ad1282cff5e);
+        
+    
+        var popup_f5435d69bb19ec57d8730e0a9aac67cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_787d49fee67e803239ef244f9dcf4e37 = $(`<div id="html_787d49fee67e803239ef244f9dcf4e37" style="width: 100.0%; height: 100.0%;">Rushikesh Thakare</div>`)[0];
+            popup_f5435d69bb19ec57d8730e0a9aac67cb.setContent(html_787d49fee67e803239ef244f9dcf4e37);
+        
+
+        marker_3f6f609921876cfd18f31e8b9d3b3681.bindPopup(popup_f5435d69bb19ec57d8730e0a9aac67cb)
+        ;
+
+        
+    
+    
+            var marker_3f8e658c31dc02aeb5d2441b51cf1e1b = L.marker(
+                [19.619440000000054, 74.65683000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_fbb9e9ee33ee6f9930f5d7a1863b3e09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3f8e658c31dc02aeb5d2441b51cf1e1b.setIcon(icon_fbb9e9ee33ee6f9930f5d7a1863b3e09);
+        
+    
+        var popup_02008c5a5157e20aa9d07208baa77a3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2b5f9b3ebb641e9d13243486e9f4011 = $(`<div id="html_f2b5f9b3ebb641e9d13243486e9f4011" style="width: 100.0%; height: 100.0%;">Yogesh Deolalkar </div>`)[0];
+            popup_02008c5a5157e20aa9d07208baa77a3f.setContent(html_f2b5f9b3ebb641e9d13243486e9f4011);
+        
+
+        marker_3f8e658c31dc02aeb5d2441b51cf1e1b.bindPopup(popup_02008c5a5157e20aa9d07208baa77a3f)
+        ;
+
+        
+    
+    
+            var marker_ff3b42575643d33191962a54558a0c97 = L.marker(
+                [20.705350000000067, 77.00218000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_e032c7adcb26fbb46b3a38ddba3e0ee3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff3b42575643d33191962a54558a0c97.setIcon(icon_e032c7adcb26fbb46b3a38ddba3e0ee3);
+        
+    
+        var popup_54b97a68dea2a397d55cad98e6cb32b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a936008f163ba86cc886830e692d77cc = $(`<div id="html_a936008f163ba86cc886830e692d77cc" style="width: 100.0%; height: 100.0%;">Atharwa Khadse</div>`)[0];
+            popup_54b97a68dea2a397d55cad98e6cb32b4.setContent(html_a936008f163ba86cc886830e692d77cc);
+        
+
+        marker_ff3b42575643d33191962a54558a0c97.bindPopup(popup_54b97a68dea2a397d55cad98e6cb32b4)
+        ;
+
+        
+    
+    
+            var marker_c86e3901b4a8117c8a2cd70f2a963a6e = L.marker(
+                [17.659223325943284, 75.3287464888037],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_f9011794d88ae77dda230f52e04c0f94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c86e3901b4a8117c8a2cd70f2a963a6e.setIcon(icon_f9011794d88ae77dda230f52e04c0f94);
+        
+    
+        var popup_dbf4a3dc42e64521289e65fe3622be1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa4ed05c1c8a470ce16c2f7a853b7d99 = $(`<div id="html_fa4ed05c1c8a470ce16c2f7a853b7d99" style="width: 100.0%; height: 100.0%;">Aniket Raut</div>`)[0];
+            popup_dbf4a3dc42e64521289e65fe3622be1f.setContent(html_fa4ed05c1c8a470ce16c2f7a853b7d99);
+        
+
+        marker_c86e3901b4a8117c8a2cd70f2a963a6e.bindPopup(popup_dbf4a3dc42e64521289e65fe3622be1f)
+        ;
+
+        
+    
+    
+            var marker_0fa73432688b566eea6c1ed310b0b310 = L.marker(
+                [19.056260000000066, 74.82070000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_ea6ebe31566340b39984e94b35bf424b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0fa73432688b566eea6c1ed310b0b310.setIcon(icon_ea6ebe31566340b39984e94b35bf424b);
+        
+    
+        var popup_99ae184f09d8e28345d198ceaf8028a5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5deca91a29ff5f462b1e799c206eba48 = $(`<div id="html_5deca91a29ff5f462b1e799c206eba48" style="width: 100.0%; height: 100.0%;">Vedant Pathak</div>`)[0];
+            popup_99ae184f09d8e28345d198ceaf8028a5.setContent(html_5deca91a29ff5f462b1e799c206eba48);
+        
+
+        marker_0fa73432688b566eea6c1ed310b0b310.bindPopup(popup_99ae184f09d8e28345d198ceaf8028a5)
+        ;
+
+        
+    
+    
+            var marker_f70786cde0a2fcd4726b38ab64cc9e59 = L.marker(
+                [18.24843000000004, 77.04604000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_029789ecd96df4824a90c8df7a39ffe6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f70786cde0a2fcd4726b38ab64cc9e59.setIcon(icon_029789ecd96df4824a90c8df7a39ffe6);
+        
+    
+        var popup_b955cbcd5abd86b7e0d68c237869b205 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_37f0411ff7749c26279f06c649e6be64 = $(`<div id="html_37f0411ff7749c26279f06c649e6be64" style="width: 100.0%; height: 100.0%;">Aditya Navgare</div>`)[0];
+            popup_b955cbcd5abd86b7e0d68c237869b205.setContent(html_37f0411ff7749c26279f06c649e6be64);
+        
+
+        marker_f70786cde0a2fcd4726b38ab64cc9e59.bindPopup(popup_b955cbcd5abd86b7e0d68c237869b205)
+        ;
+
+        
+    
+    
+            var marker_7614799b0d70b4a45d471bacdc2a37e8 = L.marker(
+                [18.400000000000034, 76.58333000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_260b2a65c32d32411163e0de02850d4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7614799b0d70b4a45d471bacdc2a37e8.setIcon(icon_260b2a65c32d32411163e0de02850d4c);
+        
+    
+        var popup_66f6e76e600c92d29f92a0e140f1568e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_312bd73f277999f6b5f956955461afb9 = $(`<div id="html_312bd73f277999f6b5f956955461afb9" style="width: 100.0%; height: 100.0%;">Aditya Gurav </div>`)[0];
+            popup_66f6e76e600c92d29f92a0e140f1568e.setContent(html_312bd73f277999f6b5f956955461afb9);
+        
+
+        marker_7614799b0d70b4a45d471bacdc2a37e8.bindPopup(popup_66f6e76e600c92d29f92a0e140f1568e)
+        ;
+
+        
+    
+    
+            var marker_10bebc11f7f5c66653eb815368ec4101 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_1b128d2e74d75e58ce85a2a7e7f15d1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_10bebc11f7f5c66653eb815368ec4101.setIcon(icon_1b128d2e74d75e58ce85a2a7e7f15d1b);
+        
+    
+        var popup_0908eaed301578707f13116d7da4da22 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e11c17eac04d82242ee7e798e95a491 = $(`<div id="html_6e11c17eac04d82242ee7e798e95a491" style="width: 100.0%; height: 100.0%;">Prasad Goregaonkar</div>`)[0];
+            popup_0908eaed301578707f13116d7da4da22.setContent(html_6e11c17eac04d82242ee7e798e95a491);
+        
+
+        marker_10bebc11f7f5c66653eb815368ec4101.bindPopup(popup_0908eaed301578707f13116d7da4da22)
+        ;
+
+        
+    
+    
+            var marker_df67a95b7c0e0745cc93fff0bf649647 = L.marker(
+                [18.648250000000075, 72.87798000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_f81eb86959b5120174888d638417f59b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df67a95b7c0e0745cc93fff0bf649647.setIcon(icon_f81eb86959b5120174888d638417f59b);
+        
+    
+        var popup_a54f8d4cd8b143f8f8ff642cee81384f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c04b502a52e1a4a4ed87746e569f425 = $(`<div id="html_3c04b502a52e1a4a4ed87746e569f425" style="width: 100.0%; height: 100.0%;">Amey Pugaonkar </div>`)[0];
+            popup_a54f8d4cd8b143f8f8ff642cee81384f.setContent(html_3c04b502a52e1a4a4ed87746e569f425);
+        
+
+        marker_df67a95b7c0e0745cc93fff0bf649647.bindPopup(popup_a54f8d4cd8b143f8f8ff642cee81384f)
+        ;
+
+        
+    
+    
+            var marker_ac8ac811bfdb274e3689367622b6a480 = L.marker(
+                [19.96652000000006, 79.29677000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_ae2b9613d8fd299bbaed7683ec1893d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac8ac811bfdb274e3689367622b6a480.setIcon(icon_ae2b9613d8fd299bbaed7683ec1893d7);
+        
+    
+        var popup_fc6fc9a5cc437bed3036d22766151bb7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f93b19c1ff641c53b3f76104d674a456 = $(`<div id="html_f93b19c1ff641c53b3f76104d674a456" style="width: 100.0%; height: 100.0%;">Tejas Yadav </div>`)[0];
+            popup_fc6fc9a5cc437bed3036d22766151bb7.setContent(html_f93b19c1ff641c53b3f76104d674a456);
+        
+
+        marker_ac8ac811bfdb274e3689367622b6a480.bindPopup(popup_fc6fc9a5cc437bed3036d22766151bb7)
+        ;
+
+        
+    
+    
+            var marker_c740b0b3c1d894ac68c40a027111168c = L.marker(
+                [21.171190000000024, 79.65631000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_d6dc67fa703a276ca78af528e738fdd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c740b0b3c1d894ac68c40a027111168c.setIcon(icon_d6dc67fa703a276ca78af528e738fdd9);
+        
+    
+        var popup_4170dc266abe58cc981be422e53cea27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01818978f3da648fe20b67bcc6dcd75b = $(`<div id="html_01818978f3da648fe20b67bcc6dcd75b" style="width: 100.0%; height: 100.0%;">Janhvi Bhute</div>`)[0];
+            popup_4170dc266abe58cc981be422e53cea27.setContent(html_01818978f3da648fe20b67bcc6dcd75b);
+        
+
+        marker_c740b0b3c1d894ac68c40a027111168c.bindPopup(popup_4170dc266abe58cc981be422e53cea27)
+        ;
+
+        
+    
+    
+            var marker_4197365bb188b62482a608b9a80449e8 = L.marker(
+                [19.239680000000078, 73.12948000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_a2937cb6d7f22edaa8f4342068e1312f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4197365bb188b62482a608b9a80449e8.setIcon(icon_a2937cb6d7f22edaa8f4342068e1312f);
+        
+    
+        var popup_b7dd7b0b282a82874296246c08a8a479 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3e4870ca46670f56b60c202324ea841a = $(`<div id="html_3e4870ca46670f56b60c202324ea841a" style="width: 100.0%; height: 100.0%;">vidya kale </div>`)[0];
+            popup_b7dd7b0b282a82874296246c08a8a479.setContent(html_3e4870ca46670f56b60c202324ea841a);
+        
+
+        marker_4197365bb188b62482a608b9a80449e8.bindPopup(popup_b7dd7b0b282a82874296246c08a8a479)
+        ;
+
+        
+    
+    
+            var marker_5551fd59d0fd230ce2f7980c6907c2f1 = L.marker(
+                [19.26735000000002, 75.74566000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_4704cc6b7fae9aa9a4f5e9a233f1a864 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5551fd59d0fd230ce2f7980c6907c2f1.setIcon(icon_4704cc6b7fae9aa9a4f5e9a233f1a864);
+        
+    
+        var popup_c386b50b5b97862a0bce1ec388b048eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdc2c7453ae103e140261f831f472276 = $(`<div id="html_cdc2c7453ae103e140261f831f472276" style="width: 100.0%; height: 100.0%;">Amol Chavan</div>`)[0];
+            popup_c386b50b5b97862a0bce1ec388b048eb.setContent(html_cdc2c7453ae103e140261f831f472276);
+        
+
+        marker_5551fd59d0fd230ce2f7980c6907c2f1.bindPopup(popup_c386b50b5b97862a0bce1ec388b048eb)
+        ;
+
+        
+    
+    
+            var marker_9fa655d1334f3ff651f762d63cca6c8e = L.marker(
+                [19.60062000000005, 77.68829000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_f08a80836ee91159064212b4b7fc1861 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9fa655d1334f3ff651f762d63cca6c8e.setIcon(icon_f08a80836ee91159064212b4b7fc1861);
+        
+    
+        var popup_a6efc5290ca2ba32371e1773a74bca1d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e32f98d531ec684181fdbda7c2614c08 = $(`<div id="html_e32f98d531ec684181fdbda7c2614c08" style="width: 100.0%; height: 100.0%;">Avantika  Wathore</div>`)[0];
+            popup_a6efc5290ca2ba32371e1773a74bca1d.setContent(html_e32f98d531ec684181fdbda7c2614c08);
+        
+
+        marker_9fa655d1334f3ff651f762d63cca6c8e.bindPopup(popup_a6efc5290ca2ba32371e1773a74bca1d)
+        ;
+
+        
+    
+    
+            var marker_227e748f45981e09119860a0447972d7 = L.marker(
+                [21.41020000000003, 79.92809000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_316b9390e927e5dfff111db02138fb32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_227e748f45981e09119860a0447972d7.setIcon(icon_316b9390e927e5dfff111db02138fb32);
+        
+    
+        var popup_866b30a3638f05f28cc791ad91b67413 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_384379be817ca475d8e217b37a349be5 = $(`<div id="html_384379be817ca475d8e217b37a349be5" style="width: 100.0%; height: 100.0%;">Mihir Baghele</div>`)[0];
+            popup_866b30a3638f05f28cc791ad91b67413.setContent(html_384379be817ca475d8e217b37a349be5);
+        
+
+        marker_227e748f45981e09119860a0447972d7.bindPopup(popup_866b30a3638f05f28cc791ad91b67413)
+        ;
+
+        
+    
+    
+            var marker_886f8c2e7ffcf621a127482a94e50d64 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_cf84636fc2abf86fb75fd2661ee0da74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_886f8c2e7ffcf621a127482a94e50d64.setIcon(icon_cf84636fc2abf86fb75fd2661ee0da74);
+        
+    
+        var popup_26ae3f950213924bdd78b7f7d27e2d9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_60d6a26747cc60bac2e0461ef6fa20d2 = $(`<div id="html_60d6a26747cc60bac2e0461ef6fa20d2" style="width: 100.0%; height: 100.0%;">Nupur Naresh Sawant </div>`)[0];
+            popup_26ae3f950213924bdd78b7f7d27e2d9b.setContent(html_60d6a26747cc60bac2e0461ef6fa20d2);
+        
+
+        marker_886f8c2e7ffcf621a127482a94e50d64.bindPopup(popup_26ae3f950213924bdd78b7f7d27e2d9b)
+        ;
+
+        
+    
+    
+            var marker_4cf5ba0d912a64fbb7e23706f69a7ab9 = L.marker(
+                [20.400000000000034, 78.13333000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_6ed94bcd17326d7134a88bc740719350 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4cf5ba0d912a64fbb7e23706f69a7ab9.setIcon(icon_6ed94bcd17326d7134a88bc740719350);
+        
+    
+        var popup_ac06bd1b8e8cd37991de060a874ed859 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3b0817e866b7d58bdd7c6f615efe140 = $(`<div id="html_e3b0817e866b7d58bdd7c6f615efe140" style="width: 100.0%; height: 100.0%;">Vedant Hiwarkar </div>`)[0];
+            popup_ac06bd1b8e8cd37991de060a874ed859.setContent(html_e3b0817e866b7d58bdd7c6f615efe140);
+        
+
+        marker_4cf5ba0d912a64fbb7e23706f69a7ab9.bindPopup(popup_ac06bd1b8e8cd37991de060a874ed859)
+        ;
+
+        
+    
+    
+            var marker_3ca3f621aeddbcbcf619f99e595d5979 = L.marker(
+                [20.79260000000005, 79.63236000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_2bbbe6fea734e0940a0a06ed3865ec82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3ca3f621aeddbcbcf619f99e595d5979.setIcon(icon_2bbbe6fea734e0940a0a06ed3865ec82);
+        
+    
+        var popup_5a104a881e949d5776589d7252f2fd2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_534f1ac54b6b1957cab9ae4b7febcf99 = $(`<div id="html_534f1ac54b6b1957cab9ae4b7febcf99" style="width: 100.0%; height: 100.0%;">Prashik Kamble </div>`)[0];
+            popup_5a104a881e949d5776589d7252f2fd2a.setContent(html_534f1ac54b6b1957cab9ae4b7febcf99);
+        
+
+        marker_3ca3f621aeddbcbcf619f99e595d5979.bindPopup(popup_5a104a881e949d5776589d7252f2fd2a)
+        ;
+
+        
+    
+    
+            var marker_d576141e4dfda6d521147ebca50ed3ef = L.marker(
+                [19.058910000000026, 72.89049000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_d65ab17f5861ac379e152c269b1a4082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d576141e4dfda6d521147ebca50ed3ef.setIcon(icon_d65ab17f5861ac379e152c269b1a4082);
+        
+    
+        var popup_e6f85d819afd0e1034c97636e78d4da0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_117e4261c01618b74143fa3681548bad = $(`<div id="html_117e4261c01618b74143fa3681548bad" style="width: 100.0%; height: 100.0%;">mahesh uttam sawant</div>`)[0];
+            popup_e6f85d819afd0e1034c97636e78d4da0.setContent(html_117e4261c01618b74143fa3681548bad);
+        
+
+        marker_d576141e4dfda6d521147ebca50ed3ef.bindPopup(popup_e6f85d819afd0e1034c97636e78d4da0)
+        ;
+
+        
+    
+    
+            var marker_55be662bb2e69d77ffc2b7424e311f0d = L.marker(
+                [20.90256000000005, 74.77264000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_99d22514f3c27f2a67a71dbfb7474861 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_55be662bb2e69d77ffc2b7424e311f0d.setIcon(icon_99d22514f3c27f2a67a71dbfb7474861);
+        
+    
+        var popup_aa5b585e060f0840fe5953db43af146b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b207ee54e06dd6b4ccf68a9b2d5a1fc1 = $(`<div id="html_b207ee54e06dd6b4ccf68a9b2d5a1fc1" style="width: 100.0%; height: 100.0%;">Kadambari Nandkishor Patil</div>`)[0];
+            popup_aa5b585e060f0840fe5953db43af146b.setContent(html_b207ee54e06dd6b4ccf68a9b2d5a1fc1);
+        
+
+        marker_55be662bb2e69d77ffc2b7424e311f0d.bindPopup(popup_aa5b585e060f0840fe5953db43af146b)
+        ;
+
+        
+    
+    
+            var marker_32b81b2d0751ae8a9ce631f426b18af5 = L.marker(
+                [20.89014000000003, 76.20135000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_97743be2684cff475034358d81155905 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_32b81b2d0751ae8a9ce631f426b18af5.setIcon(icon_97743be2684cff475034358d81155905);
+        
+    
+        var popup_ecac93f71df811e3c06bc3e785947e68 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b47fd116675eb26a61830ec0829d99 = $(`<div id="html_46b47fd116675eb26a61830ec0829d99" style="width: 100.0%; height: 100.0%;">Smitesh Bhagwat Patil</div>`)[0];
+            popup_ecac93f71df811e3c06bc3e785947e68.setContent(html_46b47fd116675eb26a61830ec0829d99);
+        
+
+        marker_32b81b2d0751ae8a9ce631f426b18af5.bindPopup(popup_ecac93f71df811e3c06bc3e785947e68)
+        ;
+
+        
+    
+    
+            var marker_167c750ec93347af54e505625c8e6b59 = L.marker(
+                [18.23885000000007, 73.28139000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_032966b1216cb034ed93cfc486fb09ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_167c750ec93347af54e505625c8e6b59.setIcon(icon_032966b1216cb034ed93cfc486fb09ba);
+        
+    
+        var popup_906c40c13ac485a0a275d97af4c9f7dd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5662b0c82ef408e1767b0e12891403f1 = $(`<div id="html_5662b0c82ef408e1767b0e12891403f1" style="width: 100.0%; height: 100.0%;">Umair Karel</div>`)[0];
+            popup_906c40c13ac485a0a275d97af4c9f7dd.setContent(html_5662b0c82ef408e1767b0e12891403f1);
+        
+
+        marker_167c750ec93347af54e505625c8e6b59.bindPopup(popup_906c40c13ac485a0a275d97af4c9f7dd)
+        ;
+
+        
+    
+    
+            var marker_1819966b438c82724f9157fcbcd109d4 = L.marker(
+                [17.562520000000063, 74.42919000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_b4e1a2f8baca2fbe347838d5bf77f6b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1819966b438c82724f9157fcbcd109d4.setIcon(icon_b4e1a2f8baca2fbe347838d5bf77f6b5);
+        
+    
+        var popup_60883a85a8204f82db4dc2d6b94a9a59 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1cbd394513f6c68af2c2cca50435eca = $(`<div id="html_a1cbd394513f6c68af2c2cca50435eca" style="width: 100.0%; height: 100.0%;">Pratik Gore</div>`)[0];
+            popup_60883a85a8204f82db4dc2d6b94a9a59.setContent(html_a1cbd394513f6c68af2c2cca50435eca);
+        
+
+        marker_1819966b438c82724f9157fcbcd109d4.bindPopup(popup_60883a85a8204f82db4dc2d6b94a9a59)
+        ;
+
+        
+    
+    
+            var marker_92c441ae89ae0a44ddd2291dc908a0a6 = L.marker(
+                [17.276910000000044, 74.18511000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_5c99e34db8cd2ee2e85672351acba8c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_92c441ae89ae0a44ddd2291dc908a0a6.setIcon(icon_5c99e34db8cd2ee2e85672351acba8c1);
+        
+    
+        var popup_9f6f6cbc449bbc0634c273d35033e47e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_724973aa6a3f3138b450352ed747b67d = $(`<div id="html_724973aa6a3f3138b450352ed747b67d" style="width: 100.0%; height: 100.0%;">Girish Mane </div>`)[0];
+            popup_9f6f6cbc449bbc0634c273d35033e47e.setContent(html_724973aa6a3f3138b450352ed747b67d);
+        
+
+        marker_92c441ae89ae0a44ddd2291dc908a0a6.bindPopup(popup_9f6f6cbc449bbc0634c273d35033e47e)
+        ;
+
+        
+    
+    
+            var marker_1c73bce67edaae49f0c3a6f5f41024d6 = L.marker(
+                [17.701040000000035, 74.16325000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_6098a43be1f7f530ab68a0d2b226588e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1c73bce67edaae49f0c3a6f5f41024d6.setIcon(icon_6098a43be1f7f530ab68a0d2b226588e);
+        
+    
+        var popup_c4db9a3cec927e67ebf2808ecfc809df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe72ec00e680b00f63250e5d5b109a6a = $(`<div id="html_fe72ec00e680b00f63250e5d5b109a6a" style="width: 100.0%; height: 100.0%;">Pratik Sonawale </div>`)[0];
+            popup_c4db9a3cec927e67ebf2808ecfc809df.setContent(html_fe72ec00e680b00f63250e5d5b109a6a);
+        
+
+        marker_1c73bce67edaae49f0c3a6f5f41024d6.bindPopup(popup_c4db9a3cec927e67ebf2808ecfc809df)
+        ;
+
+        
+    
+    
+            var marker_29f7c277443e3567197f35462a54b844 = L.marker(
+                [16.828070000000025, 74.64908000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_ce21d2d627c9b02f48fe9348b78f96ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_29f7c277443e3567197f35462a54b844.setIcon(icon_ce21d2d627c9b02f48fe9348b78f96ed);
+        
+    
+        var popup_a851df4ca3966165b7faa9fd680d2d61 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2c5739a0f77108a7ebffa91dcb4f0547 = $(`<div id="html_2c5739a0f77108a7ebffa91dcb4f0547" style="width: 100.0%; height: 100.0%;">Sarvesh Gajendragadkar</div>`)[0];
+            popup_a851df4ca3966165b7faa9fd680d2d61.setContent(html_2c5739a0f77108a7ebffa91dcb4f0547);
+        
+
+        marker_29f7c277443e3567197f35462a54b844.bindPopup(popup_a851df4ca3966165b7faa9fd680d2d61)
+        ;
+
+        
+    
+    
+            var marker_1102ffb3d6a463d80bbc77b3362df1a7 = L.marker(
+                [16.684090000000026, 74.58954000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_331e77ddb4b3fca1f3c8bdeacb32f22a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1102ffb3d6a463d80bbc77b3362df1a7.setIcon(icon_331e77ddb4b3fca1f3c8bdeacb32f22a);
+        
+    
+        var popup_b8af0a248abeb994853077c7ebba74aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_869c0f064e66329ea20e51112a31b88b = $(`<div id="html_869c0f064e66329ea20e51112a31b88b" style="width: 100.0%; height: 100.0%;">Ramesh Choudhari</div>`)[0];
+            popup_b8af0a248abeb994853077c7ebba74aa.setContent(html_869c0f064e66329ea20e51112a31b88b);
+        
+
+        marker_1102ffb3d6a463d80bbc77b3362df1a7.bindPopup(popup_b8af0a248abeb994853077c7ebba74aa)
+        ;
+
+        
+    
+    
+            var marker_8ab14033262177545f2ff13ed210a227 = L.marker(
+                [19.995110000000068, 73.79641000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_ad902297491bc4f08732d8709cb856d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ab14033262177545f2ff13ed210a227.setIcon(icon_ad902297491bc4f08732d8709cb856d0);
+        
+    
+        var popup_04aaf89fb89184e003ba5c0a2dad902d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9eef038750a9ded7c2a70543b87f5f75 = $(`<div id="html_9eef038750a9ded7c2a70543b87f5f75" style="width: 100.0%; height: 100.0%;">Mayuri Sable</div>`)[0];
+            popup_04aaf89fb89184e003ba5c0a2dad902d.setContent(html_9eef038750a9ded7c2a70543b87f5f75);
+        
+
+        marker_8ab14033262177545f2ff13ed210a227.bindPopup(popup_04aaf89fb89184e003ba5c0a2dad902d)
+        ;
+
+        
+    
+    
+            var marker_65accc60e49377e12a6afa1571ffc293 = L.marker(
+                [17.75765000000007, 73.18781000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_09c8de448eda43c15b00a1e03fbff705 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65accc60e49377e12a6afa1571ffc293.setIcon(icon_09c8de448eda43c15b00a1e03fbff705);
+        
+    
+        var popup_7390b9bebe8933b895d78621d663e4f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eeec0e1ef01be2b144c813d9cfd1b8b = $(`<div id="html_5eeec0e1ef01be2b144c813d9cfd1b8b" style="width: 100.0%; height: 100.0%;">Raj Kamble</div>`)[0];
+            popup_7390b9bebe8933b895d78621d663e4f9.setContent(html_5eeec0e1ef01be2b144c813d9cfd1b8b);
+        
+
+        marker_65accc60e49377e12a6afa1571ffc293.bindPopup(popup_7390b9bebe8933b895d78621d663e4f9)
+        ;
+
+        
+    
+    
+            var marker_cb8e4385fd0b58494883556041a3c4ea = L.marker(
+                [18.648250000000075, 72.87798000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_7ce9072e3d6a9f53a2a7bb6ae9aa8568 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb8e4385fd0b58494883556041a3c4ea.setIcon(icon_7ce9072e3d6a9f53a2a7bb6ae9aa8568);
+        
+    
+        var popup_ae0d414e91d204bbb610dab0e9586056 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ff678785f0f0cab46b7a5d64ec204e5 = $(`<div id="html_4ff678785f0f0cab46b7a5d64ec204e5" style="width: 100.0%; height: 100.0%;">Ameya Ranade</div>`)[0];
+            popup_ae0d414e91d204bbb610dab0e9586056.setContent(html_4ff678785f0f0cab46b7a5d64ec204e5);
+        
+
+        marker_cb8e4385fd0b58494883556041a3c4ea.bindPopup(popup_ae0d414e91d204bbb610dab0e9586056)
+        ;
+
+        
+    
+    
+            var marker_a2f0f8425707a97efeb602f9fd52ce46 = L.marker(
+                [19.056260000000066, 74.82070000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_adf0336f4c0d5766e977f1a1d23e10ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a2f0f8425707a97efeb602f9fd52ce46.setIcon(icon_adf0336f4c0d5766e977f1a1d23e10ba);
+        
+    
+        var popup_872256c90bc914d888801ed3b13b256a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e82031875f1a67d870f2caa28b0d0806 = $(`<div id="html_e82031875f1a67d870f2caa28b0d0806" style="width: 100.0%; height: 100.0%;">Preeti Thange</div>`)[0];
+            popup_872256c90bc914d888801ed3b13b256a.setContent(html_e82031875f1a67d870f2caa28b0d0806);
+        
+
+        marker_a2f0f8425707a97efeb602f9fd52ce46.bindPopup(popup_872256c90bc914d888801ed3b13b256a)
+        ;
+
+        
+    
+    
+            var marker_7ed0a1e3a216a5349720e4d33e12c699 = L.marker(
+                [17.68631000000005, 74.00803000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_402814beee136860fdeb71626fe75833 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7ed0a1e3a216a5349720e4d33e12c699.setIcon(icon_402814beee136860fdeb71626fe75833);
+        
+    
+        var popup_a97ac76f67edb8000bf20c542b618bcc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b63f2c716d704a21a9d711ca1d9441f3 = $(`<div id="html_b63f2c716d704a21a9d711ca1d9441f3" style="width: 100.0%; height: 100.0%;">Priti Lohakare</div>`)[0];
+            popup_a97ac76f67edb8000bf20c542b618bcc.setContent(html_b63f2c716d704a21a9d711ca1d9441f3);
+        
+
+        marker_7ed0a1e3a216a5349720e4d33e12c699.bindPopup(popup_a97ac76f67edb8000bf20c542b618bcc)
+        ;
+
+        
+    
+    
+            var marker_41056a77c3cfca03805ccc31689a1645 = L.marker(
+                [17.68631000000005, 74.00803000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_01382b2d75c6887ee609a6ab85b20d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41056a77c3cfca03805ccc31689a1645.setIcon(icon_01382b2d75c6887ee609a6ab85b20d2c);
+        
+    
+        var popup_4411c9223650619aa1e22181721ec2b2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cddc766dc075d6062d6f2bd2ce76dad = $(`<div id="html_8cddc766dc075d6062d6f2bd2ce76dad" style="width: 100.0%; height: 100.0%;">Pranav Jagtap</div>`)[0];
+            popup_4411c9223650619aa1e22181721ec2b2.setContent(html_8cddc766dc075d6062d6f2bd2ce76dad);
+        
+
+        marker_41056a77c3cfca03805ccc31689a1645.bindPopup(popup_4411c9223650619aa1e22181721ec2b2)
+        ;
+
+        
+    
+    
+            var marker_092e311ec22cb6db9b8866c47c02baad = L.marker(
+                [19.10665000000006, 72.85246000000006],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_af8f79cf4158bd951aa36e640cf74e5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_092e311ec22cb6db9b8866c47c02baad.setIcon(icon_af8f79cf4158bd951aa36e640cf74e5a);
+        
+    
+        var popup_e7060985c122babdca81d9acbec80902 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9176c6bf7343ad417bd595e7d3a3c71 = $(`<div id="html_a9176c6bf7343ad417bd595e7d3a3c71" style="width: 100.0%; height: 100.0%;">Ajinkyakedia </div>`)[0];
+            popup_e7060985c122babdca81d9acbec80902.setContent(html_a9176c6bf7343ad417bd595e7d3a3c71);
+        
+
+        marker_092e311ec22cb6db9b8866c47c02baad.bindPopup(popup_e7060985c122babdca81d9acbec80902)
+        ;
+
+        
+    
+    
+            var marker_5bce0bd79f5cbee526bd2dbe873a7ac7 = L.marker(
+                [16.505630000000053, 73.76800000000003],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_078f352039d2b85c190deb2fba000414 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5bce0bd79f5cbee526bd2dbe873a7ac7.setIcon(icon_078f352039d2b85c190deb2fba000414);
+        
+    
+        var popup_445d63aae6f7273263ad564042227756 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_da198a2ecca28e78d68fe2d0fad6477d = $(`<div id="html_da198a2ecca28e78d68fe2d0fad6477d" style="width: 100.0%; height: 100.0%;">SURVE SHASHANK</div>`)[0];
+            popup_445d63aae6f7273263ad564042227756.setContent(html_da198a2ecca28e78d68fe2d0fad6477d);
+        
+
+        marker_5bce0bd79f5cbee526bd2dbe873a7ac7.bindPopup(popup_445d63aae6f7273263ad564042227756)
+        ;
+
+        
+    
+    
+            var marker_6af8292893ede63d5a887401bdf333ef = L.marker(
+                [18.400000000000034, 76.58333000000005],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_c5ba54673cc9955777cad0efdca52def = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6af8292893ede63d5a887401bdf333ef.setIcon(icon_c5ba54673cc9955777cad0efdca52def);
+        
+    
+        var popup_65369e9761f2ab205fe601ba3b29c093 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a179cb5438480c9f86cb4131c45936d3 = $(`<div id="html_a179cb5438480c9f86cb4131c45936d3" style="width: 100.0%; height: 100.0%;">Shinde Priyanka </div>`)[0];
+            popup_65369e9761f2ab205fe601ba3b29c093.setContent(html_a179cb5438480c9f86cb4131c45936d3);
+        
+
+        marker_6af8292893ede63d5a887401bdf333ef.bindPopup(popup_65369e9761f2ab205fe601ba3b29c093)
+        ;
+
+        
+    
+    
+            var marker_475bf7ef711cdf637f4903edec12ddcf = L.marker(
+                [19.95673000000005, 76.12514000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_97b839b0a4e0863839a05a063cdf46b6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_475bf7ef711cdf637f4903edec12ddcf.setIcon(icon_97b839b0a4e0863839a05a063cdf46b6);
+        
+    
+        var popup_88e8c098c5066cee49582759f056d4f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71aac9590832f023797be35794c7b73a = $(`<div id="html_71aac9590832f023797be35794c7b73a" style="width: 100.0%; height: 100.0%;">Shadab Kayyum Shaikh </div>`)[0];
+            popup_88e8c098c5066cee49582759f056d4f0.setContent(html_71aac9590832f023797be35794c7b73a);
+        
+
+        marker_475bf7ef711cdf637f4903edec12ddcf.bindPopup(popup_88e8c098c5066cee49582759f056d4f0)
+        ;
+
+        
+    
+    
+            var marker_8ed9b60367f08d69c2a853c53d5d46ab = L.marker(
+                [19.26735000000002, 75.74566000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_9ce2f5a87d6ac049424575f9814dfc94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8ed9b60367f08d69c2a853c53d5d46ab.setIcon(icon_9ce2f5a87d6ac049424575f9814dfc94);
+        
+    
+        var popup_6f612245aaf27c417d12e94d8a086e95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aec63be37d762726aa3531d03a08513a = $(`<div id="html_aec63be37d762726aa3531d03a08513a" style="width: 100.0%; height: 100.0%;">Dhananjay kadam </div>`)[0];
+            popup_6f612245aaf27c417d12e94d8a086e95.setContent(html_aec63be37d762726aa3531d03a08513a);
+        
+
+        marker_8ed9b60367f08d69c2a853c53d5d46ab.bindPopup(popup_6f612245aaf27c417d12e94d8a086e95)
+        ;
+
+        
+    
+    
+            var marker_d728b4c2d8d7f08ea5833011797ee402 = L.marker(
+                [21.016670000000033, 75.56667000000004],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_b672f4ac763b10fbf2822f5b3b7c8ad6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d728b4c2d8d7f08ea5833011797ee402.setIcon(icon_b672f4ac763b10fbf2822f5b3b7c8ad6);
+        
+    
+        var popup_38ffc7cc47ec7520fb5a04a8002ea3f7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fd2825624b33ed09c94a8019839e061 = $(`<div id="html_8fd2825624b33ed09c94a8019839e061" style="width: 100.0%; height: 100.0%;">Ronak Patil</div>`)[0];
+            popup_38ffc7cc47ec7520fb5a04a8002ea3f7.setContent(html_8fd2825624b33ed09c94a8019839e061);
+        
+
+        marker_d728b4c2d8d7f08ea5833011797ee402.bindPopup(popup_38ffc7cc47ec7520fb5a04a8002ea3f7)
+        ;
+
+        
+    
+    
+            var marker_403be15efbcc2eda2c2d05c53a1d9edc = L.marker(
+                [18.42873000000003, 73.16385000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_4e177a39880c8e8fcafd90b62f6addbf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_403be15efbcc2eda2c2d05c53a1d9edc.setIcon(icon_4e177a39880c8e8fcafd90b62f6addbf);
+        
+    
+        var popup_563a248f519418fc36088864d9bfcb3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c7d534d941a2f26ccf352ee84b69ac3 = $(`<div id="html_3c7d534d941a2f26ccf352ee84b69ac3" style="width: 100.0%; height: 100.0%;">suyog kadam </div>`)[0];
+            popup_563a248f519418fc36088864d9bfcb3c.setContent(html_3c7d534d941a2f26ccf352ee84b69ac3);
+        
+
+        marker_403be15efbcc2eda2c2d05c53a1d9edc.bindPopup(popup_563a248f519418fc36088864d9bfcb3c)
+        ;
+
+        
+    
+    
+            var marker_df70afa1ca6f6724ce61be0da0681e8f = L.marker(
+                [18.081240000000037, 73.42205000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_371f4568582c3cf2029e565b8bb1b90c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_df70afa1ca6f6724ce61be0da0681e8f.setIcon(icon_371f4568582c3cf2029e565b8bb1b90c);
+        
+    
+        var popup_fbff7d49a2bb7b94cdc97cbf205aecb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b26a01fa7e84985ac129bcab736380f = $(`<div id="html_1b26a01fa7e84985ac129bcab736380f" style="width: 100.0%; height: 100.0%;">Mubasshir Isane</div>`)[0];
+            popup_fbff7d49a2bb7b94cdc97cbf205aecb3.setContent(html_1b26a01fa7e84985ac129bcab736380f);
+        
+
+        marker_df70afa1ca6f6724ce61be0da0681e8f.bindPopup(popup_fbff7d49a2bb7b94cdc97cbf205aecb3)
+        ;
+
+        
+    
+    
+            var marker_f0acacd6c755c7f5f2c87a9307a237c7 = L.marker(
+                [20.451910000000055, 74.22946000000007],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_676720b6584ee88a4c4cba9633c89458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f0acacd6c755c7f5f2c87a9307a237c7.setIcon(icon_676720b6584ee88a4c4cba9633c89458);
+        
+    
+        var popup_ff801640c1b63c226defc91abff22bf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8eeca822caea2486c6e0d749179fded = $(`<div id="html_c8eeca822caea2486c6e0d749179fded" style="width: 100.0%; height: 100.0%;">Tejal Alai</div>`)[0];
+            popup_ff801640c1b63c226defc91abff22bf9.setContent(html_c8eeca822caea2486c6e0d749179fded);
+        
+
+        marker_f0acacd6c755c7f5f2c87a9307a237c7.bindPopup(popup_ff801640c1b63c226defc91abff22bf9)
+        ;
+
+        
+    
+    
+            var marker_bf4327e605ba6dec28db1d54d4dc1d8d = L.marker(
+                [19.155710000000056, 77.31096000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_1504a3d2473ddd1c2721a5e4826b50d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bf4327e605ba6dec28db1d54d4dc1d8d.setIcon(icon_1504a3d2473ddd1c2721a5e4826b50d0);
+        
+    
+        var popup_167549c60c8066b7cf610d87bbd5df6e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf837e3ac0454c893f352a968e64417d = $(`<div id="html_bf837e3ac0454c893f352a968e64417d" style="width: 100.0%; height: 100.0%;">rohit satore</div>`)[0];
+            popup_167549c60c8066b7cf610d87bbd5df6e.setContent(html_bf837e3ac0454c893f352a968e64417d);
+        
+
+        marker_bf4327e605ba6dec28db1d54d4dc1d8d.bindPopup(popup_167549c60c8066b7cf610d87bbd5df6e)
+        ;
+
+        
+    
+    
+            var marker_a01ef51d42ec0628142968141e9743bf = L.marker(
+                [16.828070000000025, 74.64908000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_d15b52a4ae36f66127afb48790e40e92 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a01ef51d42ec0628142968141e9743bf.setIcon(icon_d15b52a4ae36f66127afb48790e40e92);
+        
+    
+        var popup_3096087cea4c70eee11cff36e89dda83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f8bfb031a375a659f92d0cc5a555398 = $(`<div id="html_9f8bfb031a375a659f92d0cc5a555398" style="width: 100.0%; height: 100.0%;">Namira Mujawar </div>`)[0];
+            popup_3096087cea4c70eee11cff36e89dda83.setContent(html_9f8bfb031a375a659f92d0cc5a555398);
+        
+
+        marker_a01ef51d42ec0628142968141e9743bf.bindPopup(popup_3096087cea4c70eee11cff36e89dda83)
+        ;
+
+        
+    
+    
+            var marker_199b25f5900bf78bd096cbb2811e617d = L.marker(
+                [18.42873000000003, 73.16385000000008],
+                {}
+            ).addTo(marker_cluster_f3bff16f67b1d5f0c8bd82e621504ab2);
+        
+    
+            var icon_b95769e3ad2798c4b098db5b53984e0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_199b25f5900bf78bd096cbb2811e617d.setIcon(icon_b95769e3ad2798c4b098db5b53984e0a);
+        
+    
+        var popup_8777393427304a492a51bcf3ceb003d9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e8365a6177037679100ce0e861d25840 = $(`<div id="html_e8365a6177037679100ce0e861d25840" style="width: 100.0%; height: 100.0%;">Sunil Varma </div>`)[0];
+            popup_8777393427304a492a51bcf3ceb003d9.setContent(html_e8365a6177037679100ce0e861d25840);
+        
+
+        marker_199b25f5900bf78bd096cbb2811e617d.bindPopup(popup_8777393427304a492a51bcf3ceb003d9)
+        ;
+
+        
+    
+</script>
